@@ -25,13 +25,4 @@ public class TestController {
         return "hello world";
     }
 
-    public static void main(String[] args) {
-        Jedis jedis = new Jedis("localhost",6379);
-        jedis.auth("123456");
-        jedis.set("aaaa","aaaaaaaaaa");
-        System.out.println(jedis.get("aaaa"));
-
-
-    }
-
 }
