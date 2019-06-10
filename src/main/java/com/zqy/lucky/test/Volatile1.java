@@ -40,4 +40,5 @@ class Mydata {
 	public void add() {
 		number.getAndSet(10);
 	}
+
 }
