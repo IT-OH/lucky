@@ -12,6 +12,7 @@ public class ThreadSafeList {
 //		List<String> list = new CopyOnWriteArrayList<>();
 //		Set<String> list = new CopyOnWriteArraySet<>();
 //		Set<String> list = Collections.synchronizedSet(new HashSet<>());
+		AtomicInteger a = new AtomicInteger();
 		List<String> list = Collections.synchronizedList(new LinkedList<>());
 		for (int i = 0; i < 30; i++) {
 			new Thread(()->{
